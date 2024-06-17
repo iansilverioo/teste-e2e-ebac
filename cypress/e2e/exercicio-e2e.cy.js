@@ -22,7 +22,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('.woocommerce-message').should('contain' , '2 × “Apollo Running Short” foram adicionados no seu carrinho.')
     cy.adicionarProduto('Argus All-Weather Tank' , 'S' , 'Gray' , 2)
     cy.get('.woocommerce-message').should('contain' , '2 × “Argus All-Weather Tank” foram adicionados no seu carrinho.')
-    cy.concluirCompra('Ian' , 'Silvério' , 'Brasil' , 'Av Domingos de Moraes, 28' , 'Londrina' , 'São Paulo' , '05065-001' , '14953467525')
+    cy.concluirCompra('Ian' , 'Silvério' , 
+    'Brasil' , 'Av Domingos de Moraes, 28' , 'Londrina' , 'São Paulo' , '05065-001' , '14953467525')
   });
 
 })
